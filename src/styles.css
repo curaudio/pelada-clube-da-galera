@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Instrument Serif", ui-serif, Georgia, "Times New Roman", serif;
+  --font-sans: "Outfit", ui-sans-serif, system-ui, sans-serif;
+
+  --color-bg: #0a0e0b;
+  --color-surface: #131916;
+  --color-subtle: #1a221d;
+  --color-fg: #efece4;
+  --color-muted: #8f9a91;
+  --color-accent: #b8c9b4;
+  --color-accent-fg: #0a0e0b;
+  --color-border: #2a332c;
+  --color-win: #7aa37a;
+  --color-loss: #c07a7a;
+  --color-kit-light: #efece4;
+  --color-kit-dark: #1f2a22;
+
+  --radius-xs: 0.25rem;
+  --radius-sm: 0.5rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1rem;
+  --radius-xl: 1.5rem;
+
+  --shadow-border: 0 0 0 1px rgba(239, 236, 228, 0.08);
+  --shadow-border-hover: 0 0 0 1px rgba(239, 236, 228, 0.14);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-bg);
+    color: var(--color-fg);
+  }
+
+  body {
+    font-family: var(--font-sans);
+    background-image: radial-gradient(
+      1100px 420px at 50% -8%,
+      color-mix(in oklab, var(--color-accent) 8%, transparent),
+      transparent 70%
+    );
+    background-attachment: fixed;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

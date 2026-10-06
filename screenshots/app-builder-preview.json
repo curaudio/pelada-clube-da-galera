@@ -1,0 +1,36 @@
+{
+  "url": "http://127.0.0.1:8080/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Pelada",
+      "hasCanvas": false,
+      "bodyTextLen": 866,
+      "bodyTextHash": "35c41e93c21a6c81f1d7eebe1c4a44830969473ced32d4fc3d242008c30353c0",
+      "bodyTextPrefix": "Pelada CLUBE DA GALERA Início Elenco Jogos Tabela Sorteio SOCIET",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Pelada",
+      "hasCanvas": false,
+      "bodyTextLen": 866,
+      "bodyTextHash": "c4a4ca5974608576d7e6c03ae0d28356fc908db4c0d4237ad92b96bfdbefe65e",
+      "bodyTextPrefix": "Pelada CLUBE DA GALERA SOCIETY DA VILA Domingo tem pelada. Lista",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-preview-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-preview.json"
+}
